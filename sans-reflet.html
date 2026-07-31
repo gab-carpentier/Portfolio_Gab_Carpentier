@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sans Reflet — Gabriel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+
+<header class="nav solid" id="nav">
+  <a href="index.html" class="nav-name">Gabriel</a>
+  <nav class="nav-links">
+    <a href="archive.html">Archive</a>
+    <a href="apropos.html">À propos</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <a href="index.html" class="back-link">← Accueil</a>
+
+  <section class="project-hero">
+    <div class="hero-media placeholder-media">
+      <span class="placeholder-label">vidéo / image — Sans Reflet</span>
+    </div>
+    <div class="hero-scrim"></div>
+    <div class="project-hero-content">
+      <h1>Sans Reflet</h1>
+    </div>
+  </section>
+
+  <section class="project-content">
+    <div class="project-meta">
+      <span class="meta-tag">TouchDesigner</span>
+      <span class="meta-tag">Mapping</span>
+      <span class="meta-tag">3× Orbbec</span>
+      <span class="meta-tag">3 projecteurs</span>
+      <span class="meta-tag">Direction artistique</span>
+      <span class="meta-tag">Gestion de projet</span>
+    </div>
+
+    <div class="project-text">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam quis nostrud exercitation.</p>
+
+      <p class="project-label">Rôle</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit.</p>
+
+      <p class="project-label">Défi</p>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, excepteur sint occaecat cupidatat non proident.</p>
+    </div>
+  </section>
+
+  <section class="project-gallery">
+    <div class="coverflow" data-coverflow>
+      <div class="coverflow-stage">
+        <div class="cf-item">
+          <div class="slide-placeholder" style="background:#221f2b;">
+            <span class="placeholder-label">photo — installation</span>
+          </div>
+                  <button class="cf-expand" aria-label="Voir en grand">⤢</button>
+        </div>
+        <div class="cf-item">
+          <div class="slide-placeholder" style="background:#1a1a1d;">
+            <span class="placeholder-label">vidéo — intérieur du mapping</span>
+          </div>
+                  <button class="cf-expand" aria-label="Voir en grand">⤢</button>
+        </div>
+        <div class="cf-item">
+          <div class="slide-placeholder" style="background:#1f2420;">
+            <span class="placeholder-label">schéma technique</span>
+          </div>
+                  <button class="cf-expand" aria-label="Voir en grand">⤢</button>
+        </div>
+      </div>
+      <button class="slider-arrow prev" aria-label="Photo précédente">‹</button>
+      <button class="slider-arrow next" aria-label="Photo suivante">›</button>
+      <div class="slider-dots">
+        <button class="slider-dot" aria-label="Aller à la diapositive 1"></button>
+        <button class="slider-dot" aria-label="Aller à la diapositive 2"></button>
+        <button class="slider-dot" aria-label="Aller à la diapositive 3"></button>
+      </div>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Fermer">✕</button>
+    <button class="lightbox-arrow prev" aria-label="Précédent">‹</button>
+    <div class="lightbox-content"></div>
+    <button class="lightbox-arrow next" aria-label="Suivant">›</button>
+  </div>
+
+  <div class="project-nav-footer">
+    <a href="decharge.html">← Décharge</a>
+    <a href="wall-of-sound.html">Wall Of Sound →</a>
+  </div>
+
+</main>
+
+<footer class="contact" id="contact">
+  <div class="contact-inner">
+    <p class="contact-line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <a class="contact-email" href="mailto:hello@gabriel.example">hello@gabriel.example</a>
+    <div class="contact-social">
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

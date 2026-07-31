@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gabriel — créateur d'expériences interactives</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+
+<header class="nav" id="nav">
+  <a href="index.html" class="nav-name">Gabriel</a>
+  <nav class="nav-links">
+    <a href="archive.html">Archive</a>
+    <a href="apropos.html">À propos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero-full">
+    <div class="hero-media">
+      <img class="hero-cover" src="assets/img/accueil/hero/cover.png" alt="">
+    </div>
+    <div class="hero-scrim"></div>
+    <div class="hero-content reveal">
+      <p class="eyebrow">Lorem ipsum dolor sit amet</p>
+      <h1>Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit sed do eiusmod tempor.</h1>
+    </div>
+    <button class="scroll-cue" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})" aria-label="Défiler vers les projets">
+      <span class="scroll-line"></span>
+      <span class="scroll-text">scroll</span>
+    </button>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="section-intro reveal">
+      <span class="section-label"><span class="section-dot"></span>Projets phares</span>
+    </div>
+
+    <div class="tiles">
+
+      <a class="project-tile reveal" href="sans-reflet.html" data-tilt style="--tile-bg:#1c1a22;">
+        <div class="tile-media">
+          <img class="tile-cover" src="assets/img/accueil/sans_reflet/cover.png" alt="Sans Reflet">
+          <video class="tile-video" src="assets/img/accueil/sans_reflet/loop.mp4" muted loop playsinline preload="auto"></video>
+        </div>
+        <div class="tile-overlay">
+          <h2 class="tile-title">Sans Reflet</h2>
+        </div>
+      </a>
+
+      <a class="project-tile reveal" href="wall-of-sound.html" data-tilt style="--tile-bg:#1a1c1a;">
+        <div class="tile-media">
+          <img class="tile-cover" src="assets/img/accueil/wall_of_sound/cover.png" alt="Wall Of Sound">
+          <video class="tile-video" src="assets/img/accueil/wall_of_sound/loop.mp4" muted loop playsinline preload="auto"></video>
+        </div>
+        <div class="tile-overlay">
+          <h2 class="tile-title">Wall Of Sound</h2>
+        </div>
+      </a>
+
+      <a class="project-tile reveal" href="mirabilia-floris.html" data-tilt style="--tile-bg:#1a1c20;">
+        <div class="tile-media placeholder-media">
+          <span class="placeholder-label">vidéo / image — Mirabilia Floris (à venir)</span>
+        </div>
+        <div class="tile-overlay">
+          <h2 class="tile-title">Mirabilia Floris</h2>
+        </div>
+      </a>
+
+      <a class="project-tile reveal" href="decharge.html" data-tilt style="--tile-bg:#201a1c;">
+        <div class="tile-media">
+          <img class="tile-cover" src="assets/img/accueil/decharge/cover.png" alt="Décharge">
+          <video class="tile-video" src="assets/img/accueil/decharge/loop.mp4" muted loop playsinline preload="auto"></video>
+        </div>
+        <div class="tile-overlay">
+          <h2 class="tile-title">Décharge</h2>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="contact reveal" id="contact">
+  <div class="contact-inner">
+    <p class="contact-line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <a class="contact-email" href="mailto:hello@gabriel.example">hello@gabriel.example</a>
+    <div class="contact-social">
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
